@@ -368,7 +368,7 @@ color:orange;
   border: 1px solid orange;
   padding: 5px 10px;
   background-color: white;
- 
+ border-radius:5px;
   color: orange;
   &:hover{
     color: white;
@@ -381,7 +381,7 @@ color:orange;
   border: 1px solid #eee;
   padding: 5px 10px;
   background-color: orange;
-
+border-radius:5px;
 
   color: white;
   &:hover{
