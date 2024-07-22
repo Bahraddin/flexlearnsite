@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== REMIXICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+		
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <link rel="stylesheet" href="assets/css/homestyle.css">
+        
+      <!--  <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />-->
+        <link rel="stylesheet" href="styles/style.css">
+        
+        <link rel="stylesheet" href="styles/bah.css">
+       <!-- <link rel="stylesheet" href="styles/style.css">
+        <!--<link rel="stylesheet" href="styles/service.css">-->
+        <link rel="stylesheet" href="styles/edu.css">
+
+        <title>C</title>
+    </head>
+    <body>
+        <!--=============== HEADER ===============-->
+        <header class="header">
+            <nav class="nav container">
+                <div class="nav__data">
+                    <a href="#" class="nav__logo">
+                        <i style="color:orange"  class="fas fa-lightbulb"></i> FlexLearnSite
+                    </a>
+    
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-line nav__toggle-menu"></i>
+                        <i class="ri-close-line nav__toggle-close"></i>
+                    </div>
+                </div>
+
+                <!--=============== NAV MENU ===============-->
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li>
+                            <a href="home.html" class="nav__link">Home</a>
+                        </li>
+
+                        <!--=============== DROPDOWN 1 ===============-->
+                        <li class="dropdown__item">                      
+                            <div  class="nav__link dropdown__button" id="services">
+                                Services <i  class="ri-arrow-down-s-line dropdown__arrow"></i>
+                            </div>
+
+                            <div class="dropdown__container">
+                                <div class="dropdown__content">
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-flashlight-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Natural Science</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="pysics.html" class="dropdown__link">Physics</a>
+                                            </li>
+                                            <li>
+                                                <a href="math.html" class="dropdown__link">Mathemathics</a>
+                                            </li>
+                                            <li>
+                                                <a href="biology.html" class="dropdown__link">Biology</a>
+                                            </li>
+                                            <li>
+                                            <a href="chemistry.html" class="dropdown__link">chemistry</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-heart-3-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Front-end development</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="html.html" class="dropdown__link">Learn HTML</a>
+                                            </li>
+                                            <li>
+                                                <a href="css.html" class="dropdown__link">Learn CSS</a>
+                                            </li>
+                                            <li>
+                                                <a href="js.html" class="dropdown__link">Lear JavaScript</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-book-mark-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Backend development</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="sql.html" class="dropdown__link">Learn SQL</a>
+                                            </li>
+                                            <li>
+                                                <a href="php.html" class="dropdown__link">Learn PHP</a>
+                                            </li>
+                                            <li>
+                                                <a href="python.html" class="dropdown__link">Learn Python</a>
+                                            </li>
+                                            
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-file-paper-2-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Other programming</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="c.html" class="dropdown__link">Learn C</a>
+                                            </li>
+                                            <li>
+                                                <a href="ch.html" class="dropdown__link">Learn C#</a>
+                                            </li>
+                                            <li>
+                                            <a href="cpp.html" class="dropdown__link">Learn C++</a>
+                                            </li>
+                                            <li>
+                                            <a href="java.html" class="dropdown__link">Learn Java</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!--=============== DROPDOWN 2 ===============-->
+                        <li class="dropdown__item">
+                            <div id="morenav" class="nav__link dropdown__button">
+                                More <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                            </div>
+
+                            <div class="dropdown__container">
+                                <div class="dropdown__content">
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-code-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Examination Prep</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="physicsexam.html" class="dropdown__link">Physics Quiz</a>
+                                            </li>
+                                            <li>
+                                                <a href="chemistryexam.html" class="dropdown__link">Chemistry Quiz </a>
+                                            </li>
+                                            <li>
+                                            <a href="mathexam.html" class="dropdown__link">Math Quiz </a>
+                                            </li>
+                                            <li>
+                                            <a href="biologyexam.html" class="dropdown__link">Biology Quiz </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-pen-nib-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Inspiration</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="inspiration.html" class="dropdown__link">Get Inspired</a>
+                                            </li>
+                                            
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-apps-2-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Entairnment</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="entairtement.html" class="dropdown__link">Music</a>
+                                            </li>
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="todo-list.html" class="nav__link">To-do list</a>
+                        </li>
+
+                        <!--=============== DROPDOWN 3 ===============-->
+                        <li class="dropdown__item">                        
+                            <div id="aboutnav" class="nav__link dropdown__button">
+                                About <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                            </div>
+
+                            <div class="dropdown__container">
+                                <div class="dropdown__content">
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-community-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">About us</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="about.html" class="dropdown__link">About us</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown__link">Support</a>
+                                            </li>
+                                            <li>
+                                                <a href="contact.html" class="dropdown__link">Contact us</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-shield-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Safety and quality</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="#" class="dropdown__link">Cookie settings</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown__link">Privacy Policy</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        
+        <!--=============== Body ===============-->
+        
+        
+        
+        
+
+
+    <div class="hamburger">
+        <span></span>
+ 
+        
+ 
+  
+  
+  <header class="cbackground head vid animate" >
+  
+  <h1 class="animate h1" >C : Powerful system language. 
+  
+  
+  
+  
+  </h1>
+  
+  </header>
+  
+  <section class=" edu" ><h1>Learn C </h1><br> <section><center>Unlock the power of systems programming and learn C, from beginner to expert, with our comprehensive tutorials and resources. 
+  
+  
+  
+  </center> </section>
+  <button class="eduButton" onclick="showVid(section1)" > Full Course </button>
+  <section id="section1"  class="function"> 
+    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/87SH2Cn0s9A?si=ZYKqSDiioBePlMMv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <P> C Programming Full Course for free </P>
+</section>
+  
+  
+  <button class="eduButton" onclick="showVid(section2)" >Some Tips</button>
+  <section id="section2" class="function">
+    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/dTp0c41XnrQ?si=pV_iQzyIdBXzUBfD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <P>Learn C Language In 10 Minutes!! C Language Tutorial</P>
+  </section>
+  
+  <button class="eduButton" onclick="showVid(section3)" >projecs</button>
+  <section id="section3" class="function">
+    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/N2BwLm3mTAE?si=afhlMTobGa_pUbca" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <P>Quiz Game Using C Programming</P>
+  </section>
+  
+  
+  
+  </section>
+  </section>
+  
+  
+    
+    
+    
+
+
+
+
+
+
+
+     
+     
+     <!--footer section-->
+     
+     <section class="footer">
+     <div class="box-container">
+     <div class="box">
+     <h3><i style="color:orange"  class="fas fa-lightbulb"></i>FlexLearnSite</h3>
+     <p>Your one-step destination for all your needs.</p>
+     <div class="share">
+     <a href="" class="fab fa-facebook-f"></a>
+     <a href="" class="fab fa-telegram"></a>
+     <a href="" class="fab fa-instagram"></a>
+     <a href="" class="fab fa-twitter"></a>
+     </div>
+     </div>
+     
+     <div class="box">
+     <h3>quick links</h3>
+     <a href="home.html" class="link">Home</a>
+     <a href="#services" class="link">services</a>
+     <a href="#morenav" class="link">more</a>
+     <a href="todo-list.html" class="link">todo-list</a>
+     <a href="about.html" class="link">about</a>
+     </div>
+     
+     <div class="box">
+     <h3>useful links</h3>
+     <a href="#" class="link">help center</a>
+     <a href="#" class="link">ask question</a>
+     <a href="#" class="link">send feedback</a>
+     <a href="#" class="link">private Policy</a>
+     <a href="#" class="link">terms of use</a>
+     </div>
+     
+     <div class="box">
+     <h3>news letters</h3>
+     <p>subscribe for latest updates</p>
+     <form action="">
+     <input type="email" name="" id="" placeholder="enter your email">
+     <input type="submit" name="" id="" class="btn">
+     </form>
+     </div>
+     </div>
+     <div class="writer" > Created by <span> Bahraddin Abdulmejid </span> | all rights reserved! </div>
+     </section>
+     <!--=============== MAIN JS ===============-->
+     <script src="assets/js/main.js"></script>
+     
+     <script type="text/javascript" src="javascript.js"></script>
+     
+     
+     
+     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+     
+     
+     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+     </body>
+     </html>
+
+
+
+
+
+      
+   

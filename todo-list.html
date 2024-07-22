@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== REMIXICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+		
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <link rel="stylesheet" href="assets/css/homestyle.css">
+        
+      <!--  <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />-->
+        <link rel="stylesheet" href="styles/style.css">
+        
+        <style type="text/css">
+        body {
+        font-family:Arial,sans-serif;
+        }
+        .css-input{
+        font-size:15px;
+        padding:6px;
+        }
+        .css-date{
+        font-size:15px;
+        padding:6px;
+        width:120px;
+        }
+        .css-time {
+        font-size:15px;
+        padding:6px;
+        width:80px;
+        }
+        .css-button {
+        border:none;
+        background-color:green;
+        color:white;
+        cursor:pointer;
+        font-size:15px;
+        width:100%;
+        
+        }
+        .todo-grid, .top{
+        width:70%;
+        display:grid;
+        grid-template-columns:33% 25% 16% 16% ;
+        column-gap:20px;
+        row-gap:10px;
+        align-items:center;
+        justify-content:space-around;
+        }
+        .top{
+        margin-bottom:10px;
+        align-items:stretch;
+        /*column-gap:2.53%;*/
+        }
+        .delete-button{
+        background-color:darkred;
+        border:none;
+        color:white;
+        cursor:pointer;
+        font-size:15px;
+        padding:10px 0;
+        }
+        .todo-container{
+        display:flex;
+        flex-direction:column;
+        margin:100px;
+        align-items:center;
+        justify-content:center;
+        flex-wrap:wrap;
+        }
+        @media(max-width:678px){
+        
+        .todo-container{
+        display:flex;
+        flex-direction:column;
+        margin:100px 0px;
+        
+        }
+        .css-date{
+        font-size:15px;
+        padding:6px;
+        width:100px;
+        }
+        
+     
+        
+        }
+        </style>
+
+        <title>Home</title>
+    </head>
+    <body>
+        <!--=============== HEADER ===============-->
+        <header class="header">
+            <nav class="nav container">
+                <div class="nav__data">
+                    <a href="#" class="nav__logo">
+                        <i style="color:orange"  class="fas fa-lightbulb"></i> FlexLearnSite
+                    </a>
+    
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-line nav__toggle-menu"></i>
+                        <i class="ri-close-line nav__toggle-close"></i>
+                    </div>
+                </div>
+
+                <!--=============== NAV MENU ===============-->
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li>
+                            <a href="home.html" class="nav__link">Home</a>
+                        </li>
+
+                        <!--=============== DROPDOWN 1 ===============-->
+                        <li class="dropdown__item">                      
+                            <div  class="nav__link dropdown__button" id="services">
+                                Services <i  class="ri-arrow-down-s-line dropdown__arrow"></i>
+                            </div>
+
+                            <div class="dropdown__container">
+                                <div class="dropdown__content">
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-flashlight-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Natural Science</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="pysics.html" class="dropdown__link">Physics</a>
+                                            </li>
+                                            <li>
+                                                <a href="math.html" class="dropdown__link">Mathemathics</a>
+                                            </li>
+                                            <li>
+                                                <a href="biology.html" class="dropdown__link">Biology</a>
+                                            </li>
+                                            <li>
+                                            <a href="chemistry.html" class="dropdown__link">chemistry</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-heart-3-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Front-end development</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="html.html" class="dropdown__link">Learn HTML</a>
+                                            </li>
+                                            <li>
+                                                <a href="css.html" class="dropdown__link">Learn CSS</a>
+                                            </li>
+                                            <li>
+                                                <a href="js.html" class="dropdown__link">Lear JavaScript</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-book-mark-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Backend development</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="sql.html" class="dropdown__link">Learn SQL</a>
+                                            </li>
+                                            <li>
+                                                <a href="php.html" class="dropdown__link">Learn PHP</a>
+                                            </li>
+                                            <li>
+                                                <a href="python.html" class="dropdown__link">Learn Python</a>
+                                            </li>
+                                            
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-file-paper-2-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Other programming</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="c.html" class="dropdown__link">Learn C</a>
+                                            </li>
+                                            <li>
+                                                <a href="ch.html" class="dropdown__link">Learn C#</a>
+                                            </li>
+                                            <li>
+                                            <a href="cpp.html" class="dropdown__link">Learn C++</a>
+                                            </li>
+                                            <li>
+                                            <a href="java.html" class="dropdown__link">Learn Java</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!--=============== DROPDOWN 2 ===============-->
+                        <li class="dropdown__item">
+                            <div id="morenav" class="nav__link dropdown__button">
+                                More <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                            </div>
+
+                            <div class="dropdown__container">
+                                <div class="dropdown__content">
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-code-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Examination Prep</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="physicsexam.html" class="dropdown__link">Physics Quiz</a>
+                                            </li>
+                                            <li>
+                                                <a href="chemistryexam.html" class="dropdown__link">Chemistry Quiz </a>
+                                            </li>
+                                            <li>
+                                            <a href="mathexam.html" class="dropdown__link">Math Quiz </a>
+                                            </li>
+                                            <li>
+                                            <a href="biologyexam.html" class="dropdown__link">Biology Quiz </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-pen-nib-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Inspiration</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="inspiration.html" class="dropdown__link">Get Inspired</a>
+                                            </li>
+                                            
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-apps-2-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Entairnment</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="entairtement.html" class="dropdown__link">Music</a>
+                                            </li>
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="todo-list.html" class="nav__link">To-do list</a>
+                        </li>
+
+                        <!--=============== DROPDOWN 3 ===============-->
+                        <li class="dropdown__item">                        
+                            <div id="aboutnav" class="nav__link dropdown__button">
+                                About <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                            </div>
+
+                            <div class="dropdown__container">
+                                <div class="dropdown__content">
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-community-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">About us</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="about.html" class="dropdown__link">About us</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown__link">Support</a>
+                                            </li>
+                                            <li>
+                                                <a href="contact.html" class="dropdown__link">Contact us</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-shield-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Safety and quality</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="#" class="dropdown__link">Cookie settings</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown__link">Privacy Policy</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        
+        <!--=============== Body ===============-->
+        
+        <div class="todo-container" >
+        <center><h1 style=" color:orange; padding-bottom:100px;" >Todo List</h1></center>
+        <div class="top" >
+        <input placeholder="Todo name" class="js-input css-input" ><input type="date" class="js-due-date css-date" ><input type="time" class="js-time css-time"><button onclick="todolist()" class="css-button" >Add</button></div>
+        
+        <div class="js-div todo-grid" ></div></div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <!--footer section-->
+        
+        <section class="footer">
+        <div class="box-container">
+        <div class="box">
+        <h3><i style="color:orange"  class="fas fa-lightbulb"></i>FlexLearnSite</h3>
+        <p>Your one-step destination for all your needs.</p>
+        <div class="share">
+        <a href="" class="fab fa-facebook-f"></a>
+        <a href="" class="fab fa-telegram"></a>
+        <a href="" class="fab fa-instagram"></a>
+        <a href="" class="fab fa-twitter"></a>
+        </div>
+        </div>
+        
+        <div class="box">
+        <h3>quick links</h3>
+        <a href="home.html" class="link">Home</a>
+        <a href="#services" class="link">services</a>
+        <a href="#morenav" class="link">more</a>
+        <a href="todo-list.html" class="link">todo-list</a>
+        <a href="about.html" class="link">about</a>
+        </div>
+        
+        <div class="box">
+        <h3>useful links</h3>
+        <a href="#" class="link">help center</a>
+        <a href="#" class="link">ask question</a>
+        <a href="#" class="link">send feedback</a>
+        <a href="#" class="link">private Policy</a>
+        <a href="#" class="link">terms of use</a>
+        </div>
+        
+        <div class="box">
+        <h3>news letters</h3>
+        <p>subscribe for latest updates</p>
+        <form action="">
+        <input type="email" name="" id="" placeholder="enter your email">
+        <input type="submit" name="" id="" class="btn">
+        </form>
+        </div>
+        </div>
+        <div class="writer" > Created by <span> Bahraddin Abdulmejid </span> | all rights reserved! </div>
+        </section>
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+        
+        
+        
+        
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        
+        
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+        
+        
+        <script type="text/javascript">
+        
+        const todoList=[{
+        name:"Study Web",
+        date:'2024-12-2',
+        time:'05:12'},
+        {name: "Appointment",
+        date:'2024-10-12',
+        time:'07:34'}];
+        
+        rendertodoList();
+        function rendertodoList(){
+        let todoListHTML="";
+        for(let i=0; i<todoList.length;i++){
+        
+        const todoObject = todoList[i];
+        //  const name=todoObject.name;
+        // const date=todoObject.date;
+        const {name,date, time}=todoObject;
+        
+        const Html=`
+        <div> ${name} </div> <div>${date} </div><div>${time} </div>
+        <button onclick="
+        todoList.splice(${i},1);
+        rendertodoList();
+        "
+        class="delete-button">Delete</button>
+        
+        `;
+        todoListHTML+=Html;
+        }
+        document.querySelector('.js-div').innerHTML=todoListHTML;
+        }
+        
+        function todolist(){
+        const inputElement=document.querySelector('.js-input');
+        let  value=inputElement.value;
+        const dateInputElement=document.querySelector('.js-due-date');
+        const  date=dateInputElement.value;
+        const  timeInput=document.querySelector('.js-time');
+        const  time=timeInput.value;
+        todoList.push({
+        name:value,
+        // date:date,
+        date,
+        time
+        });
+        
+        inputElement.value="";
+        dateInputElement.value="";
+        timeInput.value="";
+        
+        rendertodoList();
+        }
+        
+        
+        </script>
+        </body>
+        </html>

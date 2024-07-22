@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== REMIXICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+		
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+		
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <link rel="stylesheet" href="assets/css/homestyle.css">
+        
+      <!--  <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />-->
+        <link rel="stylesheet" href="styles/style.css">
+
+        <title>Home</title>
+    </head>
+    <body>
+        <!--=============== HEADER ===============-->
+        <header class="header">
+            <nav class="nav container">
+                <div class="nav__data">
+                    <a href="#" class="nav__logo">
+                        <i style="color:orange"  class="fas fa-lightbulb"></i> FlexLearnSite
+                    </a>
+    
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-line nav__toggle-menu"></i>
+                        <i class="ri-close-line nav__toggle-close"></i>
+                    </div>
+                </div>
+
+                <!--=============== NAV MENU ===============-->
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li>
+                            <a href="#login" class="nav__link">Home</a>
+                        </li>
+
+                        <!--=============== DROPDOWN 1 ===============-->
+                        <li class="dropdown__item">                      
+                            <div  class="nav__link dropdown__button" id="services">
+                                Services <i  class="ri-arrow-down-s-line dropdown__arrow"></i>
+                            </div>
+
+                            <div class="dropdown__container">
+                                <div class="dropdown__content">
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-flashlight-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Natural Science</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="#login" class="dropdown__link">Physics</a>
+                                            </li>
+                                            <li>
+                                                <a href="#login" class="dropdown__link">Mathemathics</a>
+                                            </li>
+                                            <li>
+                                                <a href="#login" class="dropdown__link">Biology</a>
+                                            </li>
+                                            <li>
+                                            <a href="#login" class="dropdown__link">chemistry</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-heart-3-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Front-end development</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="#login" class="dropdown__link">Learn HTML</a>
+                                            </li>
+                                            <li>
+                                                <a href="#login" class="dropdown__link">Learn CSS</a>
+                                            </li>
+                                            <li>
+                                                <a href="#login" class="dropdown__link">Lear JavaScript</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-book-mark-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Backend development</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="#login" class="dropdown__link">Learn SQL</a>
+                                            </li>
+                                            <li>
+                                                <a href="#login" class="dropdown__link">Learn PHP</a>
+                                            </li>
+                                            <li>
+                                                <a href="#login" class="dropdown__link">Learn Python</a>
+                                            </li>
+                                            
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-file-paper-2-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Other programming</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="#login" class="dropdown__link">Learn C</a>
+                                            </li>
+                                            <li>
+                                                <a href="#login" class="dropdown__link">Learn C#</a>
+                                            </li>
+                                            <li>
+                                            <a href="#login" class="dropdown__link">Learn C++</a>
+                                            </li>
+                                            <li>
+                                            <a href="#login" class="dropdown__link">Learn Java</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!--=============== DROPDOWN 2 ===============-->
+                        <li class="dropdown__item">
+                            <div id="morenav" class="nav__link dropdown__button">
+                                More <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                            </div>
+
+                            <div class="dropdown__container">
+                                <div class="dropdown__content">
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-code-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Examination Prep</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="#login" class="dropdown__link">Physics Quiz</a>
+                                            </li>
+                                            <li>
+                                                <a href="#login" class="dropdown__link">Chemistry Quiz </a>
+                                            </li>
+                                            <li>
+                                            <a href="#login" class="dropdown__link">Math Quiz </a>
+                                            </li>
+                                            <li>
+                                            <a href="#login" class="dropdown__link">Biology Quiz </a>
+                                            </li>
+                                            <li>
+                                            <a href="#login" class="dropdown__link">Other (soon) </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-pen-nib-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Inspiration</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="#login" class="dropdown__link">Get Inspired</a>
+                                            </li>
+                                            
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-apps-2-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Entertainment</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="#login" class="dropdown__link">Music</a>
+                                            </li>
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="#login" class="nav__link">To-do list</a>
+                        </li>
+
+                        <!--=============== DROPDOWN 3 ===============-->
+                        <li class="dropdown__item">                        
+                            <div id="aboutnav" class="nav__link dropdown__button">
+                                About <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                            </div>
+
+                            <div class="dropdown__container">
+                                <div class="dropdown__content">
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-community-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">About us</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="#login" class="dropdown__link">About us</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown__link">Support</a>
+                                            </li>
+                                            <li>
+                                                <a href="#login" class="dropdown__link">Contact us</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-shield-line"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Safety and quality</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="#" class="dropdown__link">Cookie settings</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown__link">Privacy Policy</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        
+        <!--=============== Body ===============-->
+
+        <!-- hero slider-->
+
+        
+        <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" navigation="true" space-between="30"
+        centered-slides="true" autoplay-delay="2500" autoplay-disable-on-interaction="false">
+        <swiper-slide style="background: url(images/hero1.jpg) no-repeat; width:100%; background-size:100% 100%"  ><div class="hero-content" >
+          	<h1 >Welcome to Bahraddin's corner</h1>
+     		 <p  >Your one-step destination for all your needs.</p>
+     		 <div style="display:flex; justify-content:center; align-items:center; gap:10px;" >
+     		 <a id="exception"  href="sign in.html" class="btn-in">Log in</a>
+     		 <a href="sign up.html"  id="exception" class="btn">sign up</a></div></div>
+        </swiper-slide>
+        
+        <swiper-slide style="background: url(images/hero2.jpg) no-repeat; width:100%; background-size:100% 100%"  ><div class="hero-content" >
+        <h1 >Welcome to Bahraddin's corner</h1>
+        <p  >Your one-step destination for all your needs.</p>
+        <div style="display:flex; justify-content:center; align-items:center; gap:10px;" >
+            <a id="exception"  href="sign in.html" class="btn-in">Log in</a>
+            <a href="sign up.html"  id="exception" class="btn">sign up</a></div></div>
+        </swiper-slide>
+        
+        <swiper-slide style="background: url(images/hero3.jpg) no-repeat; width:100%; background-size:100% 100%"  ><div class="hero-content" >
+        <h1 >Welcome to Bahraddin's corner</h1>
+        <p  >Your one-step destination for all your needs.</p>
+        <div style="display:flex; justify-content:center; align-items:center; gap:10px;" >
+            <a id="exception"  href="sign in.html" class="btn-in">Log in</a>
+            <a href="sign up.html"  id="exception" class="btn">sign up</a></div></div>
+        </swiper-slide>
+        
+        <swiper-slide style="background: url(images/hero4.jpg) no-repeat; width:100%; background-size:100% 100%"  ><div class="hero-content" >
+        <h1 >Welcome to Bahraddin's corner</h1>
+       <p  >Your one-step destination for all your needs.</p>
+       <div style="display:flex; justify-content:center; align-items:center; gap:10px;" >
+        <a id="exception"  href="sign in.html" class="btn-in">Log in</a>
+        <a href="sign up.html"  id="exception" class="btn">sign up</a></div></div>
+        </swiper-slide>
+        
+        <swiper-slide style="background: url(images/hero5.jpg) no-repeat; width:100%; background-size:100% 100%"  ><div class="hero-content" >
+        <h1 >Welcome to Bahraddin's corner</h1>
+        <p  >Your one-step destination for all your needs.</p>
+        <div style="display:flex; justify-content:center; align-items:center; gap:10px;" >
+            <a id="exception"  href="sign in.html" class="btn-in">Log in</a>
+            <a href="sign up.html"  id="exception" class="btn">sign up</a></div></div>
+        </swiper-slide>
+        
+        <swiper-slide style="background: url(images/hero6.jpg) no-repeat; width:100%; background-size:100% 100%"  ><div class="hero-content" >
+        <h1 >Welcome to Bahraddin's corner</h1>
+        <p  >Your one-step destination for all your needs.</p>
+        <div style="display:flex; justify-content:center; align-items:center; gap:10px;" >
+            <a id="exception"  href="sign in.html" class="btn-in">Log in</a>
+            <a href="sign up.html"  id="exception" class="btn">sign up</a></div></div>
+        </swiper-slide>
+        
+        <swiper-slide style="background: url(images/hero7.jpg) no-repeat; width:100%; background-size:100% 100%"  ><div class="hero-content" >
+        <h1 >Welcome to Bahraddin's corner</h1>
+        <p  >Your one-step destination for all your needs.</p>
+        <div style="display:flex; justify-content:center; align-items:center; gap:10px;" >
+            <a id="exception"  href="sign in.html" class="btn-in">Log in</a>
+            <a href="sign up.html"  id="exception" class="btn">sign up</a></div></div>
+        </swiper-slide>
+        
+        <swiper-slide style="background: url(images/hero8.jpg) no-repeat; width:100%; background-size:100% 100%"  ><div class="hero-content" >
+        <h1 >Welcome to Bahraddin's corner</h1>
+        <p  >Your one-step destination for all your needs.</p>
+        <div style="display:flex; justify-content:center; align-items:center; gap:10px;" >
+            <a id="exception"  href="sign in.html" class="btn-in">Log in</a>
+            <a href="sign up.html"  id="exception" class="btn">sign up</a></div></div>
+        </swiper-slide>
+        
+        <swiper-slide style="background: url(images/hero9.jpg) no-repeat; width:100%; background-size:100% 100%"  ><div class="hero-content" >
+        <h1 >Welcome to Bahraddin's corner</h1>
+        <p  >Your one-step destination for all your needs.</p>
+        <div style="display:flex; justify-content:center; align-items:center; gap:10px;" >
+            <a id="exception"  href="sign in.html" class="btn-in">Log in</a>
+            <a href="sign up.html"  id="exception" class="btn">sign up</a></div></div>
+        </swiper-slide>
+        
+        <swiper-slide style="background: url(images/hero10.jpg) no-repeat; width:100%; background-size:100% 100%"  ><div class="hero-content" >
+        <h1 >Welcome to Bahraddin's corner</h1>
+        <p  >Your one-step destination for all your needs.</p>
+        <div style="display:flex; justify-content:center; align-items:center; gap:10px;" >
+            <a id="exception"  href="sign in.html" class="btn-in">Log in</a>
+            <a href="sign up.html"  id="exception" class="btn">sign up</a></div></div>
+        </swiper-slide>
+        
+        </swiper-container>
+        
+
+        <!-- hero slider end-->
+        
+ 
+       
+      <!-- below slider -->
+       
+     <div class="below-container" >  
+           <div class="div1" >
+				 <h3>Flexible Learning Site</h3>
+
+               <p>hub created by student, for students. Here, you'll find a practice questions 
+               , information , and       come after us as we navigate the exciting world of student life together. Let's learn, grow, and succeed side by side.<br>
+               inspiration to support you on your academic journey. Whether you're seeking study tips or simply a community of like-minded peers, you've come to the right place.</p>
+               
+           </div>
+       
+       
+            <div  class="div2 div2_background." style="background-image:url(images/featured.jpg)" >
+            </div>
+      </div>
+
+     
+
+
+<section class="vh" >
+        <section class="textplan" ><h1>Natural Science</h1>
+        <h3>Starting at $0/mo</h3>
+        <p> Unlock the secrets of the universe and master the building blocks of life with our comprehensive courses in physics, chemistry, biology, and mathematics. 
+        </p></section>
+       </section>
+
+
+<!-- home slider start-->
+
+<section class="home-courses" >
+
+	<div class="swiper home-courses-slider " >
+	  <div class="swiper-wrapper loog" >
+	  
+	  
+	  		<div class="swiper-slide slide" >
+
+			<div class="image" >
+				<img src="images/Learning-cuate.png" >
+
+				<h3>Physics </h3>
+			</div>
+			<div class="content" >
+
+				<h3> Physics</h3>
+				<p> Study of matter and energy.</p>
+				<a href="#login" class="btn" >Learn More</a>
+			</div>
+			
+		</div>
+		
+		<div class="swiper-slide slide" >
+		
+			<div class="image" >
+				<img src="images/chemo.png" >
+		
+				<h3>Chemistry </h3>
+			</div>
+			<div class="content" >
+		
+				<h3> Chemistry</h3>
+				<p> Study of matter and its changes.</p>
+				<a href="#login" class="btn" >Learn More</a>
+			</div>
+		
+		</div>
+		
+		<div class="swiper-slide slide" >
+		
+			<div class="image" >
+				<img src="images/math.png" >
+		
+				<h3>Mathematics</h3>
+			</div>
+			<div class="content" >
+		
+			<h3>Mathematics</h3>
+				<p> Study of patterns and numbers.</p>
+				<a href="#login" class="btn" >Learn More</a>
+			</div>
+			
+		</div>
+		
+		<div class="swiper-slide slide" >
+		
+			<div class="image" >
+				<img src="images/bio.png" >
+		
+				<h3>Biology </h3>
+			</div>
+			<div class="content" >
+		
+				<h3> Biology</h3>
+				<p> The science of life itself.</p>
+				<a href="#login" class="btn" >Learn More</a>
+			</div>
+		
+		</div>
+		
+		
+		
+		
+	</div></div>
+</section>
+
+<section class="vh" >  <section class="textplan" ><h1>Front-End Development With HTML, CSS, JS</h1>
+        <h3>Starting at $0/mo</h3>
+        <p>Build beautiful, interactive websites and web applications with our in-depth front-end development courses. 
+          </p></section>
+          </section>
+          
+          
+<section class="home-courses" >
+
+	<div class="swiper home-courses-slider " >
+	  <div class="swiper-wrapper loog" >
+	  
+	  
+	  		<div class="swiper-slide slide" >
+
+			<div class="image" >
+				<img src="images/html.png" >
+
+				<h3>HTML </h3>
+			</div>
+			<div class="content" >
+
+				<h3> HTML</h3>
+				<p> High-yield, high-risk investments. </p>
+				<a href="#login" class="btn" >Learn More</a>
+			</div>
+			
+		</div>
+		
+		<div class="swiper-slide slide" >
+		
+			<div class="image" >
+				<img src="images/css.png" >
+				<h3>CSS </h3>
+			</div>
+			<div class="content" >
+		
+				<h3> CSS</h3>
+				<p> Website styling language. </p>
+				<a href="#login" class="btn" >Learn More</a>
+			</div>
+		
+		</div>
+		
+		<div class="swiper-slide slide" >
+		
+			<div class="image" >
+				<img src="images/js.png" >
+		
+				<h3>Java Script </h3>
+			</div>
+			<div class="content" >
+		
+				<h3> Java Script</h3>
+				<p> Interactive website functionality.</p>
+				<a href="#login" class="btn" >Learn More</a>
+			</div>
+			
+		</div>
+		
+		<div class="swiper-slide slide" >
+		
+			<div class="image" >
+				<img src="images/react.png" >
+		
+				<h3>React </h3>
+			</div>
+			<div class="content" >
+		
+				<h3> React</h3>
+				<p> </p>
+				<a href="#login" class="btn" >Learn More</a>
+			</div>
+		
+		</div>
+		
+		
+		
+		
+	</div></div>
+</section>
+
+<section class="vh" >
+      <section class="textplan" ><h1>Back-End PowerHouse</h1>
+          <h3> Starting at $0/mo</h3>
+          <p> Power your websites and applications with robust and scalable back-end solutions. Learn SQL, PHP, and Python to build the engine that drives the web. 
+          </p></section>
+          </section>
+          
+<section class="home-courses" >
+
+	<div class="swiper home-courses-slider " >
+	  <div class="swiper-wrapper loog" >
+	  
+	  
+	  		<div class="swiper-slide slide" >
+
+			<div class="image" >
+				<img src="images/sql.png" >
+
+				<h3>SQL </h3>
+			</div>
+			<div class="content" >
+
+				<h3> SQL</h3>
+				<p> Find largest value in column.</p>
+				<a href="#login" class="btn" >Learn More</a>
+			</div>
+			
+		</div>
+		
+		<div class="swiper-slide slide" >
+		
+			<div class="image" >
+				<img src="images/php.png" >
+		
+				<h3>PHP </h3>
+			</div>
+			<div class="content" >
+		
+				<h3> PHP</h3>
+				<p> Web scripting language.</p>
+				<a href="#login" class="btn" >Learn More</a>
+			</div>
+		
+		</div>
+		
+		<div class="swiper-slide slide" >
+		
+			<div class="image" >
+				<img src="images/python.png" >
+		
+				<h3>Python </h3>
+			</div>
+			<div class="content" >
+		
+				<h3> 
+				Python</h3>
+				<p> Versatile programming language.</p>
+				<a href="#login" class="btn" >Learn More</a>
+			</div>
+			
+		</div>
+		
+		
+		
+		
+		
+		
+	</div></div>
+</section>
+
+<section class="vh" >
+      <section class="textplan" ><h1>Learn C, C#, C++ and Java programming</h1>
+          <h3> Starting at $0/mo</h3>
+          <p> Become a versatile programmer and build any software you can imagine. Learn C, C#, C++, and Java - the foundations of modern programming. 
+          </p></section>
+          
+<section class="home-courses" >
+
+	<div class="swiper home-courses-slider " >
+	  <div class="swiper-wrapper loog" >
+	  
+
+	  		<div class="swiper-slide slide" >
+
+			<div class="image" >
+				<img src="images/c.png" >
+
+				<h3>C</h3>
+			</div>
+			<div class="content" >
+
+				<h3>C </h3>
+				<p> Powerful system language. </p>
+				<a href="#login" class="btn" >Learn More</a>
+			</div>
+			
+		</div>
+		
+		<div class="swiper-slide slide" >
+		
+			<div class="image" >
+				<img src="images/ch.png" >
+		
+				<h3>C sharp </h3>
+			</div>
+			<div class="content" >
+		
+				<h3> C sharp</h3>
+				<p> Object-oriented, versatile language.</p>
+				<a href="#login" class="btn" >Learn More</a>
+			</div>
+		
+		</div>
+		
+		<div class="swiper-slide slide" >
+		
+			<div class="image" >
+				<img src="images/C++.png" >
+		
+				<h3>C++ </h3>
+			</div>
+			<div class="content" >
+		
+				<h3> C++</h3>
+				<p> Powerful general-purpose language.</p>
+				<a href="#login" class="btn" >Learn More</a>
+			</div>
+			
+		</div>
+		
+		<div class="swiper-slide slide" >
+		
+			<div class="image" >
+				<img src="images/java.png" >
+		
+				<h3>JAVA</h3>
+			</div>
+			<div class="content" >
+		
+				<h3> JAVA</h3>
+				<p> Platform-independent, object-oriented.</p>
+				<a href="#login" class="btn" >Learn More</a>
+			</div>
+		
+		</div>
+		
+		
+		
+		
+	</div></div>
+</section>
+
+        <!--footer section-->
+
+        <section class="footer">
+            <div class="box-container">
+                <div class="box">
+                    <h3><i style="color:orange"  class="fas fa-lightbulb"></i>FlexLearnSite</h3>
+                    <p>Your one-step destination for all your needs.</p>
+                    <div class="share">
+                        <a href="" class="fab fa-facebook-f"></a>
+                        <a href="" class="fab fa-telegram"></a>
+                        <a href="" class="fab fa-instagram"></a>
+                        <a href="" class="fab fa-twitter"></a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <h3>quick links</h3>
+                    <a href="#login" class="link">Home</a>
+                    <a href="#login" class="link">services</a>
+                    <a href="#morenav" class="link">more</a>
+                    <a href="#login" class="link">todo-list</a>
+                    <a href="#login" class="link">about</a>
+                </div>
+
+                <div class="box">
+                    <h3>useful links</h3>
+                    <a href="#" class="link">help center</a>
+                    <a href="#" class="link">ask question</a>
+                    <a href="#" class="link">send feedback</a>
+                    <a href="#" class="link">private Policy</a>
+                    <a href="#" class="link">terms of use</a>
+                </div>
+
+                <div class="box">
+                    <h3>news letters</h3>
+                    <p>subscribe for latest updates</p>
+                    <form action="">
+                        <input type="email" name="" id="" placeholder="enter your email">
+                        <input type="submit" name="" id="" class="btn">
+                    </form>
+                </div>
+            </div>
+            <div class="writer" > Created by <span> Bahraddin Abdulmejid </span> | all rights reserved! </div>
+        </section>
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+        
+        
+            <script>
+               let sgnButton = document.querySelectorAll('a');
+               
+                sgnButton.forEach( a => {
+                    a.addEventListener('click', function(){
+                        if (!a.matches('#exception')) {
+                            alert(" log in if you already have an account or sign up if you're new to platform ")
+                        }
+                    })
+                })
+              
+            </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    </body>
+</html>

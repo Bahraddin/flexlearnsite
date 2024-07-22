@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>examination</title>
+    <link rel="stylesheet" href="styles/bah.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/service.css">
+</head>
+
+<body>
+  <header>
+  <div class="header-container">
+  <div class="logo">
+  <a href="#">Bahraddin</a>
+  </div>
+  <nav>
+  <ul>
+  <li><a href="home.html">Home</a></li>
+  <li><a href="about.html">About</a></li>
+  <li><a href="service.html">Services</a></li>
+  <li><a href="todo-list.html">Todo list</a></li>
+  <div class="dd">
+  <a class="dd-btn"> Contact </a>
+  <div class="dd-content">
+  <br><br>
+  <a href="tel:+251966443188">phone</a>
+  <a href="contact.html">social media</a>
+  <br>
+  </div>
+  </div>
+  </ul>
+  </nav>
+  <div class="hamburger">
+  <span></span>
+  <span></span>
+  <span></span>
+  </div>
+  </div>
+  </header>
+      <header class="exambackground head vid animate" >
+      <video autoplay loop muted>
+      <source src="video/BACKGROUND_ANIMASI_BERGERAK__PAPAN_TULIS__PUTIH(720p).mp4">
+      </video>
+      
+        <h1 class="animate h1" >Prepare your self</h1>
+       
+    </header>
+        
+        <section class="seensa" ><h1>Examination Prep </h1><br> <section><center> Prepare for your exams with our expert resources and guidance to help you succeed.</center> </section></section>
+    <section class="examsection" >  <h2 style="text-align: center">🌟 Select the correct answer from the given choices 🌟</h2>
+     <ol><li> <div class="question" data-answer="1">
+     <p><h4>What is the capital of Ethiopia?</h4></p>
+     <div class="answer" data-correct="false">A) Paris</div>
+     <div class="answer">B) London</div>
+     <div class="answer">C) Berlin</div>
+     <div class="answer" data-correct="true">D. Finfinne</div>
+     </div></li>
+     
+     <li><div class="question" data-answer="2">
+     <p><h4>Which planet is known as the Red Planet?</h4></p>
+     <div class="answer">A) Jupiter</div>
+     <div class="answer">B) Mars</div>
+     <div class="answer" data-correct="true">C) Venus</div>
+     </div></li>
+     
+     <li><div class="question" data-answer="3">
+     <p><h4>What is the largest mountain in the world?</h4></p>
+     <div class="answer" data-correct="true">A) Mount Everest</div>
+     <div class="answer" >B) Mauna Kea</div>
+     <div class="answer">C) K2</div>
+     </div></li></ol>
+     
+     <button id="submit">Submit Quiz</button>
+     
+     <div id="results">
+     <h2>Results</h2>
+     <p>Correct answers: <span id="correct-count"></span></p>
+     <p>Incorrect answers: <span id="wrong-count"></span></p>
+     </div>
+     
+     <script>
+        const answers = document.querySelectorAll('.answer');
+        const submitBtn = document.getElementById('submit');
+        const resultsDiv = document.getElementById('results');
+        const correctCountSpan = document.getElementById('correct-count');
+        const wrongCountSpan = document.getElementById('wrong-count');
+        let correctCount = 0;
+        let wrongCount = 0;
+        
+        answers.forEach(answer => {
+        answer.addEventListener('click', () => {
+        const isCorrect = answer.getAttribute('data-correct') === 'true';
+        
+      if (isCorrect) {
+          answer.classList.add('correct');
+          correctCount++;
+      } else {
+          answer.classList.add('wrong');
+          answer.parentNode.querySelector('[data-correct="true"]').classList.add('correct');
+          wrongCount++;
+      }
+      });
+      });
+      
+          submitBtn.addEventListener('click', () => {
+          resultsDiv.style.display = 'block';
+          correctCountSpan.textContent = correctCount;
+          wrongCountSpan.textContent = wrongCount;
+      });
+     </script></section>
+<div class="services">
+    <div class="service-item" id="students">
+      <h2>Student Support</h2>
+      <p>Providing guidance and resources for academic success.</p>
+      <a href="support.html" id="students-link">Learn More</a>
+    </div>
+    
+    
+    
+    <div class="service-item" id="examination">
+    <h2>Examination Prep</h2><br>
+    <p>Prepare for exams with our comprehensive study materials.</p>
+    <a href="exam.html" id="examination-link">Get Prepared</a>
+    </div>
+    
+    <div class="service-item" id="inspiration">
+    <h2>Inspiration Corner</h2><br>
+    <p>Find motivation and inspiration to reach your goals.</p>
+    <a href="inspiration.html" id="inspiration-link">Be Inspired</a>
+    </div>
+    
+    <div class="service-item" id="entertainment">
+    <h2>Entertainment Hub</h2><br>
+    <p>Explore our collection of fun and engaging activities.</p>
+    <a href="entertainment.html" id="entertainment-link">Discover More</a>
+    </div>
+    
+    </div>
+    <footer>
+        <section class="footerBlack" >
+        <ul><li>Bahraddin</li></ul>
+        <ul>
+        <li>Menu</li><ol>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="service.html">Services</a></li>
+        <li><a href="todo-list.html">Todo list</a></li></ol></ul>
+        
+        <ul>
+        <li>Services</li><ol>
+        <li><a href="physics.html">Physics</a></li>
+        <li><a href="math.html">Mathematics</a></li>
+        <li><a href="biology.html">Biology</a></li>
+        <li><a href="chemistry.html">Chemistry</a>
+        <li><a href="html.html">HTML</a></li>
+        <li><a href="Css.html">CSS</a></li>
+        <li><a href="javascript.html">JavaScript</a></li>
+        
+        
+        </ol></ul>
+        
+        
+        <ul> <li>Addition</li><ol> 
+        
+        <li><a href="exam.html" >Examination</a></li>
+        <li><a href="inspiration.html"> inspiration</a></li>
+        <li><a href="entertainment.html" >intertainment</a></li>
+        <li><a href="sql.html" >Learn SQL</a></li>
+        <li><a href="php.html" >Learn PHP</a></li>
+        <li><a href="python.html" >learn python</a></li>
+        <li><a href="C.html">Learn C</a></li>
+        <li><a href="Ch.html">Learn C#</a></li>
+        <li><a href="Cpp.html">Learn C++</a></li>
+        <li><a href="java.html" >learn java</a></li>
+        </ol>
+        </ul>
+        <ul>  <li>Contact Us</li><ol>
+        
+        <li><a href="mailto:bahraddinabdulmejid@gmail.com"><i class="fa-solid fa-envelope-open" style="color: ;"> </i>  Email: bahraddinabdulmejid@gmail.com</a></li>
+        <li><a class="animate"  href="tel:+251966443188"><i class="fa-solid fa-mobile-screen" style="color: white;"> </i> Phone: +251 966 443 188 </a></li>
+        
+        <li><a class="animate "  href="https://www.facebook.com/bahredin abdulmejid" target="_blank"><i class="fa-brands fa-facebook" style="color:aqua ;"> </i> Facebook: bahredin</a></li>
+        <li> <a class="animate "  href="https://t.me/mana_barumsa_ifaboruubultiiaddaa" target="_blank"><i class="fa-brands fa-telegram" style="color: #0ff;"> </i> Telegram: t.me/bahraddin</a>
+        </li>
+        </ol></ul>
+        
+        </section><br>
+        
+        <p style="color:white;" >&copy; 2024 Bahraddin . All rights reserved.</p>
+        </footer>
+        <script type="text/javascript" src="javascript.js"></script>
+      </body>
+      </html>
